@@ -1,0 +1,11 @@
+#download image
+wget http://|host|/image.jpg|png
+
+#check the metadata of the pic
+exiftool |image|
+
+#if PNG error appears, convert back to jpg with hexeditor
+hexeditor -b |file|
+
+#JPG hexadecimal conversion
+FF D8 FF E0 00 10 4A 46 49 46
