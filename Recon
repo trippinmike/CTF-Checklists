@@ -1,0 +1,11 @@
+#inital scan to gather services, verisons, and vulnerabilites 
+nmap -sC -sV |ip-address|
+
+#second scan to scan all ports
+nmap -Pn -p- |ip-address|
+
+#vulnerability scan of host
+nikto -h |host|
+
+dirb http://|host| -w /usr/share/wordlist/dirb/common.txt
+
